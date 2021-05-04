@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolatfelvétel</title>
+    <link rel="shortcut" href="HubDynoBudapest.png" type="image/x-icon">
+    <link rel="stylesheet" href="Design.css">
+    <link rel="stylesheet" type="text/css" href="Design.css" title="normal">
+	<link rel="alternate stylesheet" type="text/css" href="Kontraszt.css" title="nagybetus">
+    <script src="styleswitcher.js"></script>
+</head>
+<body>
+    <nav class="kipozicional">
+        <a href="#bal">Ugrás a tartalomra</a>
+    </nav>
+    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span></a>
+        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span></a>
+    </nav>
+    <header>
+        <ul id="menu">
+            <li><a href="index.html">Bemutatkozás</a></li>
+            <li><a href="masodik.html">Eddigi munkáink</a></li>
+            <li><a href="harmadik.html">MaxxECU termékek</a></li>
+            <li><a>Kapcsolatfelvétel</a></li>
+        </ul>
+    </header>
+    <main id="main">
+        <div id="bal">
+            <img src="HubDynoBudapest.png" id="HubDynoBudapest" alt="HubDynoBudapest ikon">
+            <img src="MaxxEcu.png" id="MaxxECU" alt="MaxxECU ikon">
+            <table id="tabla">
+                <caption>
+                    Elérhetőségeink
+                    <details>
+                        <summary id="osszeg">Összegzés</summary>
+                        <p>Az alábbi táblázatban a HubDynoBudapest elérhetőségeit találod, kereshetsz minket Facebookon, Instagramon, telefonon, vagy akár Gyáli telephelyünkön</p>
+                    </details>
+                </caption>
+                <tr>
+                    <th><img src="Email.png" class="ikon" alt="email ikon"></th>
+                    <th>peter@hubdynobudapest.hu</th>
+                </tr>
+                <tr>
+                    <th><img src="Phone.png" class="ikon"  alt="telefon ikon"></th>
+                    <th>+ 36 (30) 850 8474</th>
+                </tr>
+                <tr>
+                    <th><img src="Facebook.png" class="ikon" alt="facebook ikon"></th>
+                    <th><a href="https://www.facebook.com/HubDynoBudapest" target="_blank">facebook.com/HubDynoBudapest</a></th>
+                </tr>
+                <tr>
+                    <th><img src="Instagram.png" class="ikon" alt="instagram ikon"></th>
+                    <th><a href="https://www.instagram.com/hubdynobudapest" target="_blank">instagram.com/hubdynobudapest</a></th>
+                </tr>
+                <tr>
+                    <th><img src="MaxxEcu.png" class="ikon" alt="MaxxECU ikon"></th>
+                    <th><a href="https://www.maxxecu.com/" target="_blank">maxxecu.com</a></th>
+                </tr>
+                <tr>
+                    <th><img src="Map.png" class="ikon" alt="térkép ikon"></th>
+                    <th><a href="https://www.google.com/maps/place/Gy%C3%A1l,+2360/@47.3691772,19.1853806,13z/data=!3m1!4b1!4m5!3m4!1s0x4741ea535ee07d69:0x400c4290c1e1e60!8m2!3d47.3837273!4d19.2171074?hl=hu" target="_blank">Gyál 2360</a></th>
+                </tr>
+            </table>
+            <img src="Map2.png" id="terkep" alt="Gyál Budapesthez képest">
+        </div>
+        
+        <div id="jobb">
+            <form method="POST" action="mailto:mricsi01@gmail.com">
+                <div id="kisbal">
+                    <div id="kerdese">
+                        <h2>Kérdése van?</h2>
+                        <input type="radio" id="kerdeseigen" name="kerdese" value="kerdeseigen">
+                        <label for="kerdeseigen">Igen</label><br>
+                        <input type="radio" id="kerdesenem" name="kerdese" value="kerdesenem">
+                        <label for="kerdesenem">Nem</label><br>
+                    </div>
+                    <div id="jart">
+                        <h2>Járt már nálunk?</h2>
+                        <input type="radio" id="jartigen" name="jart" value="jartigen">
+                        <label for="jartigen">Igen</label><br>
+                        <input type="radio" id="jartnem" name="jart" value="jartnem">
+                        <label for="jartnem">Nem</label><br>
+                    </div>
+                    <div id="email">
+                        <label for="emailcim">Email:</label>
+                        <input type="text" id="emailcim" name="email"><br><br>
+                    </div>
+                </div>
+                <div id="kisjobb">
+                    <div id="hol">
+                        <h2>Hol hallott rólunk?</h2>
+                        <input type="checkbox" id="hol1" name="hol2" value="facebook">
+                        <label for="hol1">Facebook</label><br>
+                        <input type="checkbox" id="hol2" name="hol2" value="instagram">
+                        <label for="hol2">Instagram</label><br>
+                        <input type="checkbox" id="hol3" name="hol3" value="youtube">
+                        <label for="hol3">Youtube</label><br>
+                        <input type="checkbox" id="hol4" name="hol4" value="egyeb">
+                        <label for="hol4">Egyéb</label><br><br>
+                    </div>
+                    <div id="muvelet">
+                        <input type="reset" value="Újra" class="gomb">
+                        <input type="submit" value="Küld" class="gomb">
+                    </div>
+                </div>
+                <div id="akerdes">
+                    <label for="szoveg" id="label">Kérdés, megjegyzés helye</label>
+                    <textarea id="szoveg" name="szoveg" rows="6" cols="50"></textarea>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
